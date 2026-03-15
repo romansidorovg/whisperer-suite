@@ -35,8 +35,8 @@ const ValidationChart = ({ data }: ValidationChartProps) => {
           layout={{
             autosize: true,
             margin: { l: 50, r: 20, t: 10, b: 40 },
-            xaxis: { title: "Дата", tickfont: { size: 11 } },
-            yaxis: { title: "Значение целевой метрики", tickfont: { size: 11 } },
+            xaxis: { title: { text: "Дата" }, tickfont: { size: 11 } },
+            yaxis: { title: { text: "Значение целевой метрики" }, tickfont: { size: 11 } },
             legend: { orientation: "h", y: -0.2 },
             plot_bgcolor: "rgba(0,0,0,0)",
             paper_bgcolor: "rgba(0,0,0,0)",
