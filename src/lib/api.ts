@@ -1,6 +1,6 @@
 import type { UploadResponse, QuartersResponse, ForecastResponse } from "@/types/forecast";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL || "https://whisperer-suite.onrender.com";
 
 export async function healthCheck(): Promise<{ status: string }> {
   const res = await fetch(`${API_URL}/api/health`);
